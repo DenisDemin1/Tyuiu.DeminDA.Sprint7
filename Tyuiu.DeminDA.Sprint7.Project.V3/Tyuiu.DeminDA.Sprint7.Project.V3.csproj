@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{60057D57-A1D9-48AC-88D7-2BF162DC5C35}</ProjectGuid>
+    <ProjectGuid>{8C861BD4-5FA8-4295-AC2E-5A0EC35175A2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Tyuiu.DeminDA.Sprint7.Project.V3</RootNamespace>
     <AssemblyName>Tyuiu.DeminDA.Sprint7.Project.V3</AssemblyName>
@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,14 +48,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProgramMain.cs">
+    <Compile Include="AddNewData.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProgramMain.Designer.cs">
-      <DependentUpon>ProgramMain.cs</DependentUpon>
+    <Compile Include="AddNewData.Designer.cs">
+      <DependentUpon>AddNewData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Func.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Func.Designer.cs">
+      <DependentUpon>Func.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management.Designer.cs">
+      <DependentUpon>Management.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddNewData.resx">
+      <DependentUpon>AddNewData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Func.resx">
+      <DependentUpon>Func.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management.resx">
+      <DependentUpon>Management.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +103,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +117,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tyuiu.DeminDA.Sprint7.Project.V3.Lib\Tyuiu.DeminDA.Sprint7.Project.V3.Lib.csproj">
+      <Project>{75ca601f-c98b-42ad-bcdc-a5baffc43035}</Project>
+      <Name>Tyuiu.DeminDA.Sprint7.Project.V3.Lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

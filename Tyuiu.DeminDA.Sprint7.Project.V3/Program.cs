@@ -1,8 +1,10 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tyuiu.DeminDA.Sprint7.Project.V3;
 
 namespace Tyuiu.DeminDA.Sprint7.Project.V3
 {
@@ -16,7 +18,7 @@ namespace Tyuiu.DeminDA.Sprint7.Project.V3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ProgramMain());
+            Application.Run(new FormMain());
         }
     }
 }

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
-[assembly: AssemblyTitle("Tyuiu.DeminDA.Sprint7.Project.V3")]
+[assembly: AssemblyTitle("Tyuiu.KolchakovDR.Sprint7.Project.V3")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Tyuiu.DeminDA.Sprint7.Project.V3")]
+[assembly: AssemblyProduct("Tyuiu.KolchakovDR.Sprint7.Project.V3")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("60057d57-a1d9-48ac-88d7-2bf162dc5c35")]
+[assembly: Guid("8c861bd4-5fa8-4295-ac2e-5a0ec35175a2")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //
