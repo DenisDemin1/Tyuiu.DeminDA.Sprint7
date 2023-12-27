@@ -30,6 +30,7 @@ namespace Tyuiu.DeminDA.Sprint7.Project.V3.Lib
             }
             return arrayValues;
         }
+        //
         public bool UpData(string path, string[,] Data)
         {
             bool save = false;
