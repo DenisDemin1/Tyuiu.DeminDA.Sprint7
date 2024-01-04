@@ -35,7 +35,6 @@ namespace Tyuiu.DeminDA.Sprint7.Project.V3
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelTop_DDA = new System.Windows.Forms.Panel();
-            this.buttonInfo_DDA = new System.Windows.Forms.Button();
             this.panelLeftTop_DDA = new System.Windows.Forms.Panel();
             this.panelLeft_DDA = new System.Windows.Forms.Panel();
             this.buttonLoadLesson_DDA = new System.Windows.Forms.Button();
@@ -54,36 +53,20 @@ namespace Tyuiu.DeminDA.Sprint7.Project.V3
             // panelTop_DDA
             // 
             this.panelTop_DDA.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panelTop_DDA.Controls.Add(this.buttonInfo_DDA);
             this.panelTop_DDA.Controls.Add(this.panelLeftTop_DDA);
             this.panelTop_DDA.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop_DDA.Location = new System.Drawing.Point(0, 0);
-            this.panelTop_DDA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTop_DDA.Margin = new System.Windows.Forms.Padding(4);
             this.panelTop_DDA.Name = "panelTop_DDA";
             this.panelTop_DDA.Size = new System.Drawing.Size(1212, 84);
             this.panelTop_DDA.TabIndex = 1;
-            // 
-            // buttonInfo_DDA
-            // 
-            this.buttonInfo_DDA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonInfo_DDA.BackgroundImage")));
-            this.buttonInfo_DDA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonInfo_DDA.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonInfo_DDA.FlatAppearance.BorderSize = 0;
-            this.buttonInfo_DDA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInfo_DDA.Location = new System.Drawing.Point(1119, 0);
-            this.buttonInfo_DDA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.buttonInfo_DDA.Name = "buttonInfo_DDA";
-            this.buttonInfo_DDA.Size = new System.Drawing.Size(93, 84);
-            this.buttonInfo_DDA.TabIndex = 7;
-            this.toolTip_DDA.SetToolTip(this.buttonInfo_DDA, "О программе");
-            this.buttonInfo_DDA.UseVisualStyleBackColor = true;
             // 
             // panelLeftTop_DDA
             // 
             this.panelLeftTop_DDA.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panelLeftTop_DDA.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeftTop_DDA.Location = new System.Drawing.Point(0, 0);
-            this.panelLeftTop_DDA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelLeftTop_DDA.Margin = new System.Windows.Forms.Padding(4);
             this.panelLeftTop_DDA.Name = "panelLeftTop_DDA";
             this.panelLeftTop_DDA.Size = new System.Drawing.Size(267, 84);
             this.panelLeftTop_DDA.TabIndex = 1;
@@ -97,7 +80,7 @@ namespace Tyuiu.DeminDA.Sprint7.Project.V3
             this.panelLeft_DDA.Controls.Add(this.buttonLoadTeacher_DDA);
             this.panelLeft_DDA.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft_DDA.Location = new System.Drawing.Point(0, 84);
-            this.panelLeft_DDA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelLeft_DDA.Margin = new System.Windows.Forms.Padding(4);
             this.panelLeft_DDA.Name = "panelLeft_DDA";
             this.panelLeft_DDA.Size = new System.Drawing.Size(267, 533);
             this.panelLeft_DDA.TabIndex = 2;
@@ -184,7 +167,7 @@ namespace Tyuiu.DeminDA.Sprint7.Project.V3
             this.panel1.Controls.Add(this.chartPre_DDA);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(267, 84);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(945, 533);
             this.panel1.TabIndex = 3;
@@ -198,7 +181,7 @@ namespace Tyuiu.DeminDA.Sprint7.Project.V3
             legend1.Name = "Legend1";
             this.chartPre_DDA.Legends.Add(legend1);
             this.chartPre_DDA.Location = new System.Drawing.Point(0, 0);
-            this.chartPre_DDA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chartPre_DDA.Margin = new System.Windows.Forms.Padding(4);
             this.chartPre_DDA.Name = "chartPre_DDA";
             series1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
             series1.ChartArea = "ChartArea1";
@@ -218,7 +201,7 @@ namespace Tyuiu.DeminDA.Sprint7.Project.V3
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelLeft_DDA);
             this.Controls.Add(this.panelTop_DDA);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1227, 654);
             this.Name = "Func";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -243,7 +226,6 @@ namespace Tyuiu.DeminDA.Sprint7.Project.V3
         private System.Windows.Forms.Button buttonLoadTeacher_DDA;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartPre_DDA;
-        private System.Windows.Forms.Button buttonInfo_DDA;
         private System.Windows.Forms.ToolTip toolTip_DDA;
     }
 }
